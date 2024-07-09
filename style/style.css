@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
+    color: black;
 }
 
 body{
@@ -71,6 +73,7 @@ header{
 }
 
 #corpo-conteudo section{
+    background-color: rebeccapurple;
     width: 36%;
     height: 40%;
     display: flex;
@@ -79,7 +82,6 @@ header{
     justify-content: center;
     padding: 2%;
     font-size: 1.5em;
-    background-color: rebeccapurple;
 }
 
 #corpo-conteudo section:hover{
