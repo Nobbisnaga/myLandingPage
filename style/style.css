@@ -185,13 +185,14 @@ header{
     #corpo-conteudo-direito{
         width: 100%;
         height: 100%;
+        padding-left: 10%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
     .botoes{
-        width: 80%;
+        width: 100%;
         height: 150px;
         display: flex;
     }
