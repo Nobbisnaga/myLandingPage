@@ -18,6 +18,15 @@ h2{
     font-size: 1.0em;
     font-family: sans-serif;
 }
+#logotipo{
+    background-image: url(../img/logoHackerSpace.png);
+    background-size: cover;
+    object-fit: cover;
+    image-rendering: optimizeQuality;
+    width:200px;
+    height: 100px;
+    background-color: rgba(240, 248, 255, 0);
+}
 /*////////////////////////////////////////////////////////////*/
 body{
     background-image: url(../img/hsr-space.png);
@@ -127,8 +136,8 @@ header{
 }
 
 #corpo-conteudo-direito section{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
     margin-top: 4%;
     margin-bottom: 5%;
     display: flex;
@@ -137,15 +146,36 @@ header{
     justify-content: space-around;
     padding: 4%;
     margin-top: 7.5%;
+    margin-bottom: 1%;
     margin-right: 9%;
     font-size: 0.8em;
     background-color: rgb(161, 72, 229);
 }
 
+#corpo-conteudo-direito img {
+    display: block;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+  }
 #corpo-conteudo-direito section:hover{
     transform: scale(1.15);
 }
 
+  /*//////////////////////////////////////////////////////*/
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*//////////////////////////////////////////////////////*/
 #rodape{
     width: 100%;
     height: 10%;
