@@ -9,7 +9,10 @@
 </head>
 <body>
     <header>
-        <img src="img/logoHackerSpace.png" height="35px" alt="logo">
+        <button id="logotipo" onclick="alert(
+            'Bem-vindo(a) ao Hacker Space'
+            )">
+        </button>
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="eventos.html">Eventos</a>
@@ -23,7 +26,7 @@
                 <h1>
                     Jade na 2.4
                 </h1>
-                <img src="./img/jade-argenti_banner.webp" width="100%" height="60%" >
+                <img src="./img/jade-argenti_banner.webp" width="650px">
                 <h2>
                     Jade e Argenti, novo conteúdo end-game chegando! junto da ultima parte de Penacony
                 </h2>
@@ -36,35 +39,43 @@
             </section>
             </article>
             <aside id="corpo-conteudo-direito">
-                <section>
-                    <h1>
-                        Firefly na 2.3
-                    </h1>
-                    <img src="./img/firefly.jpeg" width="100%" object-fit="cover" alt="png">
-                    <h2>
-                        Vagalume, Jade e novo conteúdo end-game chegando! junto da ultima parte de Penacony
-                    </h>
-                    <h2>
-                        o que esperar na atualização 2.3 de Honkai Star Rail?
-                    </h>
-                    <h2>
-                        Publicado em 19/06/2024
-                    </h2>
-                </section>
-                <section>
-                    <h1>
-                        Trailer
-                    </h1>
-                    <iframe width="100%" height="60%" src="https://www.youtube.com/embed/pdiwGOicQVs?si=Y13SdvVn05TphW2Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <h2>
-                        Novo curta animado <strong>"As Brasas de Glamoth"</strong> conta mais sobre Vagalume e Sam
-                    </h2>
-                    <h2>
-                        Publicado em 14/06/2024
-                    </h2>
-                </section>
-            </aside>
-        </section>
+                <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+                    <swiper-slide>
+                        <section>
+                            <h1>
+                                Trailer
+                            </h1>
+                            <iframe width="100%" height="60%" src="https://www.youtube.com/embed/pdiwGOicQVs?si=Y13SdvVn05TphW2Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h2>
+                                Novo curta animado <strong>"As Brasas de Glamoth"</strong> conta mais sobre Vagalume e Sam
+                            </h2>
+                            <h2>
+                                Publicado em 14/06/2024
+                            </h2>
+                        </section>
+                    </swiper-slide>
+                <swiper-slide>
+                    <section>
+                        <h1>
+                            Firefly na 2.3
+                        </h1>
+                        <img src="./img/firefly.jpeg">
+                        <h2>
+                            Vagalume, Jade e novo conteúdo end-game chegando! junto da ultima parte de Penacony
+                        </h>
+                        <h2>
+                            o que esperar na atualização 2.3 de Honkai Star Rail?
+                        </h>
+                        <h2>
+                            Publicado em 19/06/2024
+                        </h2>
+                    </section>
+                </swiper-slide>
+                </swiper-container>
+                </aside>
+
+            </section>        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <footer id="rodape">
         <address>
             todos os direitos reservados ª<br>
