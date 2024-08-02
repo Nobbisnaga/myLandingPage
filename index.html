@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Space</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="app.js"></script>
     <link rel="shortcut icon" href="img/logoHackerSpace-Ntext.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
 </head>
 <body>
     <header>
-        <img src="img/logoHackerSpace.png" height="40px" object-fit="cover" alt="png">
+        <button id="logotipo" onclick="alert(
+            'Bem-vindo(a) ao Hacker Space'
+            )">
+        </button>
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="eventos.html">Eventos</a>
@@ -36,29 +45,33 @@
                         <button class="botao"><img src="img/insta-icon.png" height="15px">Instagram</button>
                     </div>
                 </section>
-                
             </aside>
+            
             <aside id="corpo-conteudo-direito">
-                <section>
-                    <h1>
-                        Firefly na 2.3
-                    </h1>
-                    <img src="./img/firefly.jpeg" width="100%" height="60%">
-                    <h2>
-                        Vagalume, Jade e novo conteúdo end-game chegando! junto da ultima parte de Penacony
-                    </h2>
-                    <h2>
-                        o que esperar na atualização 2.3 de Honkai Star Rail?
-                    </h2>
-                    <h2>
-                        Publicado em 19/06/2024
-                    </h2>
-                </section>
+            <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+                <swiper-slide>
+                    <section>
+                        <h1>
+                            Firefly na 2.3
+                        </h1>
+                        <img src="./img/firefly.jpeg">
+                        <h2>
+                            Vagalume, Jade e novo conteúdo end-game chegando! junto da ultima parte de Penacony
+                        </h>
+                        <h2>
+                            o que esperar na atualização 2.3 de Honkai Star Rail?
+                        </h>
+                        <h2>
+                            Publicado em 19/06/2024
+                        </h2>
+                    </section>
+                </swiper-slide>
+            <swiper-slide>
                 <section>
                     <h1>
                         We Coffee
                     </h1>
-                    <img src="./img/Kafka-banner.jpeg" width="100%" height="60%">
+                    <img src="./img/Kafka-banner.jpeg">
                     <h2>
                         We Coffe de São Paulo anúncia menu temático dos <strong>Caçadores de Stellaron!</strong> junto de alguns brindes!
                     </h2>
@@ -66,8 +79,12 @@
                         Duração 17/05/2024 - 13/06/2024
                     </h2>
                 </section>
+            </swiper-slide>
+            </swiper-container>
             </aside>
-        </section>
+
+            </section>        
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <footer id="rodape">
         <address>
             todos os direitos reservados ª
