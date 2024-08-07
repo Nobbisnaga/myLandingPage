@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Space</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="shortcut icon" href="./img/Logo.jpeg" type="image/x-icon">
+    <script src="app.js"></script>
+    <link rel="shortcut icon" href="img/logoHackerSpace-Ntext.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
 </head>
 <body>
     <header>
         <figure>
-            <img src="img/logoHackerSpace.png" width="200px">
+            <img src="img/logoHackerSpace.png" height="100px">
         </figure>
         <nav id="menu">
             <a href="index.html">Home</a>
@@ -20,39 +26,29 @@
     </header>
     <main id = "geral">
         <section id = "corpo">
-            <article id="corpo-conteudo-esquerdo">
+            <aside id="corpo-conteudo-esquerdo">
                 <section>
-                    <img src="img/Silver_Wolf_Splash_Art.webp" width="60%">
-                    <h1>Sobre o Hacker Space</h1>
+                    <img src="img/Silver_Wolf_Splash_Art.webp" width="400px" object-fit="cover" alt="png">
+                    <h1>
+                        Sobre o Hacker Space
+                    </h1>
                     <h2>
                         Viemos aos trailblazers entregar conteúdo sobre eventos fisicos e web relacionados ao já conhecido Honkai Star Rail! não conhece o jogo e caiu aqui de paraquedas? tudo bem, estamos aqui para isso!
                     </h2>
                     <h2>
                         Honkai: Star Rail é um RPG que mistura fantasia mitológica com ficção científica num macrocosmo em que é possível viajar pelo espaço a bordo de um trem e conhecer diferentes planetas. A jogatina é baseada em combate por turnos e exploração de mapas, mas existe uma quantidade notável de conteúdo para gerenciar.
                     </h2>
+                    <div class="botoes">
+                        <p>Contato</p>
+                        <button class="botao"><img src="img/github-icon.png" height="15px">GitHub</button>
+                        <button class="botao"><img src="img/insta-icon.png" height="15px">Instagram</button>
+                    </div>
                 </section>
-                <div class="botoes">
-                    <p>Contato</p>
-                    <button class="botao"><img src="img/github-icon.png" height="15px">GitHub</button>
-                    <button class="botao"><img src="img/insta-icon.png" height="15px">Instagram</button>
-                </div>
-            </article>
+            </aside>
+            
             <aside id="corpo-conteudo-direito">
-                <swiper-container class="mySwiper" direction="horizontal" pagination="true" pagination-clickable="true">
-                    <swiper-slide>
-                        <section>
-                            <h1>
-                                We Coffee
-                            </h1>
-                            <img src="./img/Kafka-banner.jpeg">
-                            <h2>
-                                We Coffe de São Paulo anúncia menu temático dos <strong>Caçadores de Stellaron!</strong> junto de alguns brindes!
-                            </h2>
-                            <h2>
-                                Duração 17/05/2024 - 13/06/2024
-                            </h2>
-                        </section>
-                    </swiper-slide>
+            <swiper-container class="mySwiper" direction="horizontal" pagination="true" pagination-clickable="true">
+                
                 <swiper-slide>
                     <section>
                         <h1>
@@ -70,14 +66,30 @@
                         </h2>
                     </section>
                 </swiper-slide>
-                </swiper-container>
-                </aside>
 
-            </section>        
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <swiper-slide>
+                <section>
+                    <h1>
+                        We Coffee
+                    </h1>
+                    <img src="./img/Kafka-banner.jpeg">
+                    <h2>
+                        We Coffe de São Paulo anúncia menu temático dos <strong>Caçadores de Stellaron!</strong> junto de alguns brindes!
+                    </h2>
+                    <h2>
+                        Duração 17/05/2024 - 13/06/2024
+                    </h2>
+                </section>
+            </swiper-slide>
+            </swiper-container>
+            </aside>
+
+            </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <footer id="rodape">
         <address>
-            todos os direitos reservados ª<br>
+            todos os direitos reservados ª
+            <br>
             Desenvolvido por Lucas.Rios
         </address>
     </footer>
